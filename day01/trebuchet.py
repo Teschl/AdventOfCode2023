@@ -25,7 +25,9 @@ def aufg2():
     sum = 0
     for i in lines:
         i = i.strip()
-
+        
+        # added first an last tetters to sub so stuff 
+        # like "oneight" works as "18" not "1ight"
         i = re.sub("zero","0o",i)
         i = re.sub("one","o1e",i)
         i = re.sub("two","t2o",i)
