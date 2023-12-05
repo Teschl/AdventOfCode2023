@@ -32,6 +32,9 @@ def aufg1():
 
     return result
 
+
+# ONLY WORKIG ON SMALL SAMPLE
+
 def aufg2():
     filePath = "day04/input2.txt"
     file = open(filePath)
@@ -62,7 +65,7 @@ def aufg2():
                 tmp.append(index+count)
         winTable.append(tmp)
     print(winTable)
-    
+
     # create List with original wins
     result = []
     for i in range(0,len(winTable)):
@@ -73,8 +76,7 @@ def aufg2():
     while i < len(result):
         result = result + winTable[result[i]]
         i += 1
-
-    print(result)
+    print(result.sort())
     return len(result)    
 
 
