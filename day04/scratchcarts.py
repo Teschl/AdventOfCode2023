@@ -40,7 +40,7 @@ def aufg2():
 
     weight = []
 
-    for card in lines:
+    for index, card in enumerate(lines):
         card = card.strip()
 
         card = re.sub("Card.+: ","",card)
@@ -52,14 +52,21 @@ def aufg2():
         draw = re.split(" ",card[1])
         draw = list(filter(None, draw))
 
-        score = 0
-        for i in draw:
-            if i in win:
-                score += 1
-        # hier dann in gewichts liste eintagen wie viel wer wert ist
-        # damit dann summe berchnet werden kann
-        for i in range(0,score):
-            pass
+
+        # find which card produces which other cards
+        count = 0
+        tmp = []
+        for item in draw:
+            if item in win:
+                count += 1
+                tmp.append(index+count)
+        weight.append(tmp)
+
+    # WELCHE KARTE PRODUZIERT WELCHES ERGEBNIS:
+    print(weight)
+
+    # ? wtf ? 
+            
 
 
 print(aufg1())
