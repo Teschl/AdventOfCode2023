@@ -8,4 +8,4 @@
 
 <https://github.com/jhannesreimann/Advent-of-Code-2023>
 
-<https://github.com/osoth/adventofcode>
+<https://github.com/osoth/adventofcode2023>
