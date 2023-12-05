@@ -1,6 +1,5 @@
 
 def aufg1():
-
     filePath = "day05/input.txt"
     file = open(filePath)
     lines = file.readlines()
@@ -8,7 +7,6 @@ def aufg1():
 
 
 def aufg2():
-
     filePath = "day05/input.txt"
     file = open(filePath)
     lines = file.readlines()

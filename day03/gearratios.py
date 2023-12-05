@@ -39,6 +39,7 @@ def aufg1():
             
      # [(numVal, lineIdx, cellIdx, numLen)]
     # check for tool neighbours
+    '''
     part = False
     result = 0
     poggers = numbers.append(".")
@@ -51,7 +52,7 @@ def aufg1():
         if part:
             result = result + i[0]
 
-
+    '''
 
 
     print(pointer)

@@ -33,12 +33,12 @@ def aufg1():
     return result
 
 def aufg2():
-    filePath = "day04/input.txt"
+    filePath = "day04/input2.txt"
     file = open(filePath)
     lines = file.readlines()
     file.close()
 
-    weight = []
+    winTable = []
 
     for index, card in enumerate(lines):
         card = card.strip()
@@ -60,13 +60,22 @@ def aufg2():
             if item in win:
                 count += 1
                 tmp.append(index+count)
-        weight.append(tmp)
+        winTable.append(tmp)
+    print(winTable)
+    
+    # create List with original wins
+    result = []
+    for i in range(0,len(winTable)):
+        result.append(i)
 
-    # WELCHE KARTE PRODUZIERT WELCHES ERGEBNIS:
-    print(weight)
+    # add copies to List
+    i = 0
+    while i < len(result):
+        result = result + winTable[result[i]]
+        i += 1
 
-    # ? wtf ? 
-            
+    print(result)
+    return len(result)    
 
 
 print(aufg1())
