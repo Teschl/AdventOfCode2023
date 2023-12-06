@@ -33,7 +33,7 @@ def aufg1():
     return result
 
 
-# ONLY WORKIG ON SMALL SAMPLE
+# ONLY WORKING ON SMALL SAMPLE
 
 def aufg2():
     filePath = "day04/input2.txt"
