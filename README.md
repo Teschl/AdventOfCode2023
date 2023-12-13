@@ -2,6 +2,10 @@
 
 <https://adventofcode.com/>
 
+## Leaderboard
+
+<https://adventofcode.com/2023/leaderboard/private/view/3690397>
+
 ## Erzfeinde
 
 <https://github.com/naiylo/adventofcode2023>
@@ -20,7 +24,7 @@ Day 03 | wip | -
 Day 04 | done | done
 Day 05 | wip | -
 Day 06 | done | done
-Day 07 | wip | -
+Day 07 | done | wip
 Day 08 | wip | -
 Day 09 | wip | -
 Day 10 | wip | -
